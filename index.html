@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Estadisticas y Formulario</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="Estadistica.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="tabs.js"></script>
+</head>
+<body>
+	<section class = "form">
+		<h4>Valores de la grafica</h4>
+		<div class="wrap">
+			<ul class="tabs">
+				<li><a href="#tab1"><span></span><span class="tab-text">2020</span></a></li>
+				<li><a href="#tab2"><span></span><span class="tab-text">2016</span></a></li>
+				<li><a href="#tab3"><span></span><span class="tab-text">2012</span></a></li>
+				<li><a href="#tab4"><span></span><span class="tab-text">2008</span></a></li>
+				<li><a href="#tab5"><span></span><span class="tab-text">2004</span></a></li>
+			</ul>
+	
+			<div class="secciones">
+				<article id="tab1">
+					<input class="textos" type="text" id="col2020"  placeholder="Colombia">
+					<input class="textos" type="text" id="cub2020"  placeholder="Cuba">
+					<input class="textos" type="text" id="p2020" placeholder="Panama">
+					<input class="textos" type="text" id="ch2020" placeholder="Chile">
+					<input class="textos" type="text" id="mex2020"  placeholder="Mexico">
+					<input class="textos" type="text" id="pe2020"  placeholder="Peru">
+					<input class="textos" type="text" id="ur2020"  placeholder="Uruguay">
+					<input class="textos" type="text" id="rd2020"  placeholder="Republica Dominicana">
+				</article>
+				<article id="tab2">
+					<input class="textos" type="text" id="col2016"  placeholder="Colombia">
+					<input class="textos" type="text" id="cub2016"  placeholder="Cuba">
+					<input class="textos" type="text" id="p2016"  placeholder="Panama">
+					<input class="textos" type="text" id="ch2016"  placeholder="Chile">
+					<input class="textos" type="text" id="mex2016"  placeholder="Mexico">
+					<input class="textos" type="text" id="pe2016"  placeholder="Peru">
+					<input class="textos" type="text" id="ur2016"  placeholder="Uruguay">
+					<input class="textos" type="text" id="rd2016"  placeholder="Republica Dominicana">
+				</article>
+				<article id="tab3">
+					<input class="textos" type="text" id="col2012" placeholder="Colombia">
+					<input class="textos" type="text" id="cub2012"  placeholder="Cuba">
+					<input class="textos" type="text" id="p2012"  placeholder="Panama">
+					<input class="textos" type="text" id="ch2012"  placeholder="Chile">
+					<input class="textos" type="text" id="mex2012"  placeholder="Mexico">
+					<input class="textos" type="text" id="pe2012"  placeholder="Peru">
+					<input class="textos" type="text" id="ur2012"  placeholder="Uruguay">
+					<input class="textos" type="text" id="rd2012"  placeholder="Republica Dominicana">
+				</article>
+				<article id="tab4">
+					<input class="textos" type="text" id="col2008" placeholder="Colombia">
+					<input class="textos" type="text" id="cub2008" placeholder="Cuba">
+					<input class="textos" type="text" id="p2008" placeholder="Panama">
+					<input class="textos" type="text" id="ch2008" placeholder="Chile">
+					<input class="textos" type="text" id="mex2008"  placeholder="Mexico">
+					<input class="textos" type="text" id="pe2008" placeholder="Peru">
+					<input class="textos" type="text" id="ur2008" placeholder="Uruguay">
+					<input class="textos" type="text" id="rd2008" placeholder="Republica Dominicana">
+				</article>
+				<article id="tab5">
+					<input class="textos" type="text" id="col2004" placeholder="Colombia">
+					<input class="textos" type="text" id="cub2004" placeholder="Cuba">
+					<input class="textos" type="text" id="p2004" placeholder="Panama">
+					<input class="textos" type="text" id="ch2004" placeholder="Chile">
+					<input class="textos" type="text" id="mex2004" placeholder="Mexico">
+					<input class="textos" type="text" id="pe2004"  placeholder="Peru">
+					<input class="textos" type="text" id="ur2004" placeholder="Uruguay">
+					<input class="textos" type="text" id="rd2004" placeholder="Republica Dominicana">
+				</article>
+			</div>
+			<button id="llenar" class="Ingresar">Ingresar</button>
+		</div>
+	</section>
+	<div class='buttons'>
+		<button id='2004'>
+			2004
+		</button>
+		<button id='2008'>
+			2008
+		</button>
+		<button id='2012'>
+			2012
+		</button>
+		<button id='2016'>
+			2016
+		</button>
+		<button id='2020' class='active'>
+			2020
+		</button>
+	</div>
+	<div id="container"></div>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+	<script src="Estadistica.js"></script>	
+</body>
+</html>
